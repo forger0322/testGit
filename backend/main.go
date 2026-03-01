@@ -12,9 +12,9 @@ func main() {
     http.HandleFunc("/api/register", registerHandler)
     http.HandleFunc("/api/login", loginHandler)
 
-    fmt.Println("Server starting on :8080...")
+    fmt.Println("Server starting on :9090...")
     // TODO: Add graceful shutdown
-    if err := http.ListenAndServe(":8080", nil); err != nil {
+    if err := http.ListenAndServe(":9090", nil); err != nil {
         fmt.Println("Error starting server:", err)
     }
 }
